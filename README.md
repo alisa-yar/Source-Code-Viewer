@@ -8,6 +8,9 @@ go to http://127.0.0.1:8000/inspector/
 1. style the html files with separate CSS file (how to add CSS to Django?)
 2. beautify the output HTML 
 3. Publish it (?) if it isn't expensive
+4. Fix the code so it'll work with: diabled cookies, websites that return 403 error,
+5. Add tests
+6. Add the url that was given in the input to the output url (/output/https://google.com  
 
 ## How to create Django project from Macbook terminal?
 $ cd Desktop  
