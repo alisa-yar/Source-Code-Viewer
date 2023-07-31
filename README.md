@@ -4,6 +4,9 @@ This website gets a url and returns the HTML (source code) of the website.
 This code doesn't work on vercel (yet) so I copy-pasted my code to their Django template so it would deploy. I need to rewrite this code but for now its running here:  https://django-source-code.vercel.app/  
 (I haven't fixed it yes, so it gives 403 error for some websites and don't work without cookies😅)  
 
+![notes](notes1.jpg)  
+![notes](notes2.jpg)  
+
 ## How to use?
 $ python manage.py runserver   
 go to http://127.0.0.1:8000/inspector/  
