@@ -23,13 +23,18 @@ go to http://127.0.0.1:8000/inspector/
 $ cd Desktop  
 $ mkdir sourcecode  
 $ cd sourcecode  
+$ python3 -m venv .venv  
+$ source .venv/bin/activate  
 $ pipenv install django  
+$ pipenv install urllib3  
+$ pipenv install bs4  
+$ pipenv install beautifulsoup4  
+$ pipenv install requests  
 $ code . (or open the new project in vscode)  
 $ pipenv shell  
 $ django-admin startproject sourcecode .  
 $ python manage.py startapp inspector    
 
-$ pip install urllib3
 $ pip freeze > requirements.txt  
 
 <!-- 
