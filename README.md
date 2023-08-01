@@ -23,7 +23,7 @@ go to http://127.0.0.1:8000/inspector/
 $ cd Desktop  
 $ mkdir sourcecode  
 $ cd sourcecode  
-$ python -m venv .venv  
+$ python3 -m venv .venv  
 $ source .venv/bin/activate 
 $ pipenv install django  
 $ code . (or open the new project in vscode)  
