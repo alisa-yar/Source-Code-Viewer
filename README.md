@@ -35,7 +35,6 @@ $ pipenv shell
 $ django-admin startproject sourcecode .  
 $ python manage.py startapp inspector    
 
-$ pip install urllib3
 $ pip freeze > requirements.txt  
 
 <!-- 
