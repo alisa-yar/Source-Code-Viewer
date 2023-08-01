@@ -11,7 +11,7 @@ https://source-code-django.vercel.app
 
 ## How to use?
 $ python manage.py runserver   
-go to http://127.0.0.1:8000/inspector/  
+go to http://127.0.0.1:8000/ 
 
 ## To Do:
 1. style the html files with separate CSS file (how to add CSS to Django?)
