@@ -24,7 +24,7 @@ $ cd Desktop
 $ mkdir sourcecode  
 $ cd sourcecode  
 $ python3 -m venv .venv  
-$ source .venv/bin/activate 
+$ source .venv/bin/activate  
 $ pipenv install django  
 $ code . (or open the new project in vscode)  
 $ pipenv shell  
