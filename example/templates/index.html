@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Code - Input</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- <script src="{% static 'js/dark.js' %}"></script> -->
+    <script>
+        window.addEventListener("load", (event) => {
+            const theme = localStorage.getItem('theme')
+            if (theme == 'light') {
+                changeTheme()
+            }
+        })
+        function changeTheme() {
+            document.body.classList.toggle("light-mode")
+            if(document.body.classList.contains("light-mode")){
+                document.getElementById("icon").src = "{% static 'images/moon.png' %}";
+                localStorage.setItem('theme', 'light')
+            }
+            else {
+                document.getElementById("icon").src = "{% static 'images/sun.png' %}";
+                localStorage.setItem('theme', 'dark')
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <img id="icon" onclick="changeTheme()" src="{% static 'images/sun.png' %}" alt="sun">    
+    </nav> 
+    <main>
+        <div class="card">
+            <h1>Source Code Viewer</h1>
+            <form action="{% url 'output' %}" method="POST">
+                {% csrf_token %}
+                <input type="url" name="wanted_url" id="wanted_url" placeholder="URL" value="{{ wanted_url }}">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+        <footer>
+            <p>Build by 
+                <a href="https://twitter.com/alisayar_" target="_blank">alisa.algo</a>
+                | 2023 |
+                <a href="https://github.com/alisa-yar/SourceCode" target="_blank">Source Code</a>
+            </p>
+        </footer>
+    </main>
+</body>
+</html>

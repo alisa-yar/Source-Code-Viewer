@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --bg: black;
+    --textColor: white;
+    --textColorSec: #818181;
+    --input: #818181;
+    --select: #3A3B3C;
+    --footer: #818181;
+    --navBg: rgb(13, 13, 13);
+    --linkColor: #007AFF;
+}
+.light-mode {
+    --bg: #F2F2F6;
+    --textColor: black;
+    --textColorSec: #6C6D70;
+    --input: #a6a6a6;
+    --footer: #818181;
+    --select: #818181;
+    --navBg: white;
+    --linkColor: #007AFF; 
+}
+
+/**********BASIC STYLES**********/
+* {
+    box-sizing: content-box;
+}
+body {
+    background-color: var(--bg);
+    color: var(--textColor);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; 
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+main {
+    padding: 10px 20px; /*vertical | horizontal*/
+}
+
+/**********CARD**********/
+.card {
+    background-color: var(--navBg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-top: 60px;
+    padding: 10px 20px; /*vertical | horizontal*/
+}
+
+/**********TYPOGRAPHY**********/
+h1 {
+    font-size: 37px;
+    font-weight: 800;
+    text-align: center;
+}
+h2 {
+    align-items: left;
+    font-size: 25px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+h4 {
+    font-size: 15px;
+    font-weight: 700;
+}
+a {
+    color: var(--linkColor);
+    text-decoration: none;
+}
+p {
+    align-items: left;
+    color: var(--textColorSec);
+    font-size: 18px;
+}
+
+/**********LISTS**********/
+ul,
+ol {
+    list-style-type: none;
+}
+li {
+    line-height: 2;
+}
+
+/**********FORMS, INPUT AND BUTTONS**********/
+button, input, select, textarea {
+    border-radius: 5px;
+    color: var(--textColor);
+    display: block;
+    font-family: inherit;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+}
+/* label {
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+} */
+input, select, textarea {
+    background-color: var(--navBg);
+    border: 2px solid var(--input);
+}
+#submit, input[type="submit"], button {
+    background-color: var(--linkColor);
+    border: 2px solid var(--linkColor);
+}
+/* input[type="color"] {
+    color: var(--textColor);
+} */
+
+/**********TABLES**********/
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid var(--textColor);
+    margin: 10px;
+    padding: 5px;
+}
+tfoot {
+    text-align: left;
+}
+
+/**********IMAGES**********/
+img, picture {
+    display: block;
+}
+
+/**********NAVIGATION BAR**********/
+nav {
+    align-items: center; 
+    background-color: var(--navBg);
+    box-sizing: border-box;
+    display: inline-flex;           
+    height: 60px;
+    justify-content: center;
+    position: absolute; /*changed from my regular fixed navbar*/ 
+    top: 0;
+    width: 100%;
+}
+nav li {
+    align-items: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav a {
+    align-items: center;
+    color: var(--textColor);
+    display: inline-block;
+    font-weight: 500;
+    padding: 10px;
+}
+#active {
+    color: var(--linkColor);
+}
+nav a:hover, a:focus {
+    color: var(--textColorSec);
+}
+#icon {
+    height: 20px;
+    padding: 10px;
+    width: 20px;
+}
+
+/**********CODE**********/
+pre {
+    tab-size: 4;
+    font-size: 13px;
+}
+pre > code {
+    background-color: rgba(0, 0, 0, 0.05);
+    display: block;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+/**********FOOTER**********/
+footer p {
+    color: var(--footer);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/**********SPECIFIC CSS:**********/
+.button {
+    font-size: 11px;
+    background-color: var(--linkColor);
+    border-radius: 5px;
+    border: 2px solid var(--linkColor);
+    color: var(--textColor);
+    display: block;
+    font-family: inherit;
+    font-weight: 400;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+}
+.current {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 0;
+    text-align: center;
+}
+.html-card {
+    margin-top: 20px;
+}
