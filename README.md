@@ -28,6 +28,8 @@ $ source .venv/bin/activate
 $ pipenv install django  
 $ pipenv install urllib3  
 $ pipenv install bs4  
+$ pipenv install beautifulsoup4  
+$ pipenv install requests  
 $ code . (or open the new project in vscode)  
 $ pipenv shell  
 $ django-admin startproject sourcecode .  
