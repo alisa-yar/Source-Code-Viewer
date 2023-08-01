@@ -26,6 +26,8 @@ $ cd sourcecode
 $ python3 -m venv .venv  
 $ source .venv/bin/activate  
 $ pipenv install django  
+$ pipenv install urllib3  
+$ pipenv install bs4  
 $ code . (or open the new project in vscode)  
 $ pipenv shell  
 $ django-admin startproject sourcecode .  
