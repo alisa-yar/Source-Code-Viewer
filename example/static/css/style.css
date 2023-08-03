@@ -46,6 +46,7 @@ main {
     margin: 5px;
     margin-top: 60px;
     padding: 10px 20px; /*vertical | horizontal*/
+    overflow-x: scroll;
 }
 
 /**********TYPOGRAPHY**********/
@@ -175,7 +176,6 @@ pre {
 pre > code {
     background-color: rgba(0, 0, 0, 0.05);
     display: block;
-    overflow-x: scroll;
     padding: 10px;
 }
 
@@ -207,6 +207,7 @@ footer p {
     font-weight: 600;
     margin-top: 0;
     text-align: center;
+
 }
 .html-card {
     margin-top: 20px;
