@@ -39,14 +39,9 @@
             <h2 class="current">{{ url }}</h2>
             <!-- <input type="url" name="current_url" id="current_url" placeholder="{{ url }}" value="{{ current_url }}"> -->
             <a class="button" href="/">BACK</a>
-            <form action="{% url 'search' %}" method="POST">
-                {% csrf_token %}
-                <input type="text" name="search" id="search" placeholder="SEARCH" value="{{ wanted_search }}">
-                <input type="submit" value="SUBMIT">
-            </form>
         </div>
         <div class="card html-card">
-            <pre class="html" value="{{ current_html }}"><code>{{ html }}</code></pre>
+            <pre class="html"><code>{{ html }}</code></pre>
         </div>
         <footer>
             <p>Build by 

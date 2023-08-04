@@ -6,5 +6,4 @@ from . import views
 urlpatterns = [
     path('', index, name="index"),
     path("output/", views.source, name="output"),
-    path("search/", views.find_query, name="search"),
 ]
