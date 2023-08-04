@@ -36,7 +36,9 @@ $ pipenv install requests
 $ code . (or open the new project in vscode)  
 $ pipenv shell  
 $ django-admin startproject sourcecode .  
-$ python manage.py startapp inspector    
+$ python manage.py startapp inspector  
+
+$ python manage.py runserver  
 
 $ pip freeze > requirements.txt  
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Source Code - Output</title>
+    <title>Source Code - Query</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="icon" href="{% static 'images/html-file.png' %}" type="image/png"/>
     <!-- <script src="{% static 'js/dark.js' %}"></script> -->
@@ -35,20 +35,13 @@
     </nav> 
     <main>
         <div class="card">
-            <h1>The Source Code</h1>
+            <h1>The Source Code Query</h1>
             <h2 class="current">{{ url }}</h2>
-            <!-- <input type="url" name="current_url" id="current_url" placeholder="{{ url }}" value="{{ current_url }}"> -->
-            <a class="button" href="/">BACK</a>
-            <form action="{% url 'search' %}" method="POST">
-                {% csrf_token %}
-                <input type="text" name="search" id="search" placeholder="SEARCH" value="{{ wanted_search }}">
-                <input type="submit" value="SUBMIT">
-            </form>
         </div>
+        <h2 class="current">{{ query }}</h2>
         <div class="card html-card">
-            <pre class="html" value="{{ current_html }}"><code>{{ html }}</code></pre>
+            <pre class="find-all"><code>{{ findAll }}</code></pre>
         </div>
-        <footer>
             <p>Build by 
                 <a href="https://twitter.com/alisayar_" target="_blank">alisa.algo</a>
                 | 2023 |

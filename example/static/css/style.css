@@ -3,21 +3,25 @@
     --bg: black;
     --textColor: white;
     --textColorSec: #818181;
+    --pColor: #818181;
     --input: #818181;
     --select: #3A3B3C;
     --footer: #818181;
     --navBg: rgb(13, 13, 13);
     --linkColor: #007AFF;
+    --linkHover: #818181;
 }
 .light-mode {
     --bg: #F2F2F6;
     --textColor: black;
     --textColorSec: #6C6D70;
+    --pColor: #6C6D70;
     --input: #a6a6a6;
     --footer: #818181;
     --select: #818181;
     --navBg: white;
-    --linkColor: #007AFF; 
+    --linkColor: #007AFF;
+    --linkHover: #6C6D70;
 }
 
 /**********BASIC STYLES**********/
@@ -26,10 +30,10 @@
 }
 body {
     background-color: var(--bg);
+    line-height: 1.5;
     color: var(--textColor);
     font-family: 'Inter', sans-serif;
     font-weight: 500; 
-    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
@@ -74,13 +78,12 @@ a {
 }
 p {
     align-items: left;
-    color: var(--textColorSec);
+    color: var(--pColor);
     font-size: 18px;
 }
 
 /**********LISTS**********/
-ul,
-ol {
+ul, ol {
     list-style-type: none;
 }
 li {
@@ -91,18 +94,17 @@ li {
 button, input, select, textarea {
     border-radius: 5px;
     color: var(--textColor);
-    display: block;
+    /* display: block; */
     font-family: inherit;
     margin: 10px auto;
     padding: 10px;
     width: 90%;
 }
-/* label {
-    border-radius: 5px;
+label { /*align vertically the label with the input*/
     display: block;
-    margin: 10px auto;
-    padding: 10px;
-} */
+    width: 100%;
+    font-size: 15px;
+}
 input, select, textarea {
     background-color: var(--navBg);
     border: 2px solid var(--input);
@@ -111,14 +113,16 @@ input, select, textarea {
     background-color: var(--linkColor);
     border: 2px solid var(--linkColor);
 }
-/* input[type="color"] {
+/* 
+input[type="color"] {
     color: var(--textColor);
-} */
+} 
+*/
 
 /**********TABLES**********/
 table, td, th {
-    border-collapse: collapse;
     border: 1px solid var(--textColor);
+    border-collapse: collapse;
     margin: 10px;
     padding: 5px;
 }
@@ -139,7 +143,7 @@ nav {
     display: inline-flex;           
     height: 60px;
     justify-content: center;
-    position: absolute; /*changed from my regular fixed navbar*/ 
+    position: absolute; /*changed from the regular fixed*/     
     top: 0;
     width: 100%;
 }
@@ -160,7 +164,7 @@ nav a {
     color: var(--linkColor);
 }
 nav a:hover, a:focus {
-    color: var(--textColorSec);
+    color: var(--linkHover);
 }
 #icon {
     height: 20px;
