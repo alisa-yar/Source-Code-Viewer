@@ -2,7 +2,10 @@
 This website gets a url and returns the HTML (source code) of the website.   
 
 https://source-code-django.vercel.app  
-(I still haven't fixed: the 403 error for some websites and that it don't work without cookies😅)  
+
+The issues were fixed (somehow). The 403 error was fixed by not using the 'urllib' library and using the 'requests' library instead for the web scraping (or at least that's what I think), and it seems to work even when my cookies are disabled.  
+
+~(I still haven't fixed: the 403 error for some websites and that it don't work without cookies😅)~  
   
 ~This code doesn't work on vercel (yet) so I copy-pasted my code to their Django template so it would deploy. I need to rewrite this code but for now its running here:  https://django-source-code.vercel.app/~  
 
