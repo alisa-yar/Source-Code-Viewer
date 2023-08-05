@@ -3,7 +3,9 @@ This website gets a url and returns the HTML (source code) of the website.
 
 https://source-code-django.vercel.app  
 
-The issues were fixed (somehow). The 403 error was fixed by not using the 'urllib' library and using the 'requests' library instead for the web scraping (or at least that's what I think), and it seems to work even when my cookies are disabled.  
+(5.8.23) I decided to move this project to Flask instaed of Django for more flexability and convenience).  
+
+(3.8.23) The issues were fixed (somehow). The 403 error was fixed by not using the 'urllib' library and using the 'requests' library instead for the web scraping (or at least that's what I think), and it seems to work even when my cookies are disabled.  
 
 ~(I still haven't fixed: the 403 error for some websites and that it don't work without cookies😅)~  
   
