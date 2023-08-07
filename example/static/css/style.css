@@ -106,6 +106,7 @@ button, input, select, textarea {
 input, select, textarea {
     background-color: var(--navBg);
     border: 2px solid var(--input);
+    font-size: 16px;
 }
 #submit, input[type="submit"], button {
     background-color: var(--linkColor);
