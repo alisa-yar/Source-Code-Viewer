@@ -3,7 +3,7 @@ This website gets a url and returns the HTML (source code) of the website.
 
 https://source-code-django.vercel.app  
 
-~(5.8.23) I decided to move this project to Flask instaed of Django for more flexability and convenience)~
+~(5.8.23) I decided to move this project to Flask instaed of Django for more flexability and convenience)~  
 
 (3.8.23) The issues were fixed (somehow). The 403 error was fixed by not using the 'urllib' library and using the 'requests' library instead for the web scraping (or at least that's what I think), and it seems to work even when my cookies are disabled.  
 
@@ -11,17 +11,14 @@ https://source-code-django.vercel.app
   
 ~This code doesn't work on vercel (yet) so I copy-pasted my code to their Django template so it would deploy. I need to rewrite this code but for now its running here:  https://django-source-code.vercel.app/~  
 
-![notes](notes1.jpg)  
-![notes](notes2.jpg)  
-
 ## How to use?
 $ python manage.py runserver   
 go to http://127.0.0.1:8000/ 
 
 ## To Do:
 1. style the html files with separate CSS file (how to add CSS to Django?)
-2. beautify the output HTML ✔️
-3. Publish it (?) if it isn't expensive ✔️
+2. beautify the output HTML ✔️  
+3. Publish it (?) if it isn't expensive ✔️  
 4. Fix the code so it'll work with: diabled cookies, websites that return 403 error
 6. Add tests
 7. Add the url that was given in the input to the output url (/output/https://google.com)
@@ -69,3 +66,6 @@ $ pip install urllib3
 
 https://codinggear.blog/how-to-upload-django-project-to-github/?expand_article=1  
 -->
+
+![notes](notes1.jpg)  
+![notes](notes2.jpg)  
